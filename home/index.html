@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>INGATE</title>
+		<link
+			rel="shortcut icon"
+			href="../Images/GSM-PRINCIPAL GENTE CONFIABLE BLANCO 1.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="index.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h1 class="font title mt-5">¿Como podemos ayudarle?</h1>
+				</div>
+			</div>
+			<div class="row mt-4 pb-5 font" style="color: white">
+				<div class="col-4 text-center">
+					<div class="backBlue py-2 pb-4 px-0">
+						<p class="py-1 miniTitle">MIS VISITAS</p>
+						<img src="../images/Vector (13).png" class="img-fluid mt-3" />
+						<p class="mt-2">Programar Visitas</p>
+						<button
+							onclick="openModal('modalVisitas')"
+							class="btnRed py-2 px-5"
+						>
+							ABRIR
+						</button>
+					</div>
+				</div>
+				<div class="col-4 text-center">
+					<div style="background: #3f489b" class="backBlue py-2 pb-4 px-0">
+						<p class="py-1 miniTitle">PAQUETES Y DELIVERY</p>
+						<img src="../images/Package.png" class="img-fluid mt-3" />
+						<p class="mt-2">Pedidos</p>
+						<button
+							onclick="openModal('modalPaquetes')"
+							class="btnRed py-2 px-5"
+						>
+							ABRIR
+						</button>
+					</div>
+				</div>
+				<div class="col-4 text-center">
+					<div style="background: #223442" class="backBlue py-2 pb-4 px-0">
+						<p class="py-1 miniTitle">FAMILIA</p>
+						<img src="../images/Group (7).png" class="img-fluid mt-3" />
+						<p class="mt-2">Familia</p>
+						<button class="btnRed py-2 px-5">ABRIR</button>
+					</div>
+				</div>
+				<div class="col-4 text-center mt-4">
+					<div style="background: #548bb7" class="backBlue py-2 pb-4 px-0">
+						<p class="py-1 miniTitle">VIGILANCIA</p>
+						<img
+							src="../images/mdi_security-account.png"
+							class="img-fluid mt-3"
+						/>
+						<p class="mt-2">Vigilancia Barrio</p>
+						<button class="btnRed py-2 px-5">ABRIR</button>
+					</div>
+				</div>
+				<div class="col-4 text-center mt-4">
+					<div style="background: #064844" class="backBlue py-2 pb-4 px-0">
+						<p class="py-1 miniTitle">AUTORIZADOS</p>
+						<img src="../images/Plumber.png" class="img-fluid mt-3" />
+						<p class="mt-2">Autorizados personal hogar</p>
+						<button class="btnRed py-2 px-5">ABRIR</button>
+					</div>
+				</div>
+				<div class="col-4 text-center mt-4">
+					<div style="background: #4a4a4a" class="backBlue py-2 pb-4 px-0">
+						<p class="py-1 miniTitle">VEHÍCULOS</p>
+						<div>
+							<img src="../images/SUV.png" class="img-fluid mt-3" />
+							<img src="../images/Group (8).png" class="img-fluid mt-3" />
+						</div>
+						<p class="mt-2">Mis vehículos</p>
+						<button class="btnRed py-2 px-5">ABRIR</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal Abrir Visitas -->
+		<div
+			style="
+				background-color: rgba(0, 0, 0, 0.404);
+				width: 100vw;
+				height: 100vh;
+				position: fixed;
+				top: 0;
+				display: none;
+			"
+			id="modalVisitas"
+		>
+			<div class="container modalCont">
+				<div class="row pb-5">
+					<div
+						class="col-12 mx-3"
+						style="position: relative; display: flex; align-items: center"
+					>
+						<img src="../images/Vector (14).png" class="img-fluid" />
+						<h1
+							class="font title mt-5 mx-2"
+							style="font-size: 1.4rem; position: relative; top: -0.9em"
+						>
+							Mis Visitas
+						</h1>
+						<div style="position: absolute; right: 3em">
+							<i
+								class="fa-solid fa-xmark"
+								style="color: #496dab; font-size: 2.5rem; cursor: pointer"
+								onclick="closeModal('modalVisitas')"
+							></i>
+						</div>
+					</div>
+					<div class="col-12 px-5">
+						<div class="modalBox">
+							<div class="row px-4 mt-4">
+								<div class="col-3">
+									<div>
+										<p style="font-weight: 600">Programar nueva visita</p>
+										<p class="mb-1">Nombre</p>
+										<input type="text" class="w-100 px-2 py-1" />
+										<p class="mb-1 mt-3">Apellido</p>
+										<input type="text" class="w-100 px-2 py-1" />
+										<p class="mb-1 mt-3">DNI</p>
+										<input type="text" class="w-100 px-2 py-1" />
+										<p class="mb-1 mt-3">Horario de ingreso (Aprox)</p>
+										<input type="text" class="w-100 px-2 py-1" />
+										<div class="mt-5 pb-5">
+											<button class="btnRed py-1 px-5">Registrar visita</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-9">
+									<div class="mx-3">
+										<p style="font-weight: 600" class="mb-1">
+											Busqueda personalizada
+										</p>
+										<input type="text" class="w-50 px-2 py-1" />
+										<i
+											class="fa-solid fa-magnifying-glass"
+											style="position: relative; left: -2em"
+										></i>
+										<div
+											class="row mt-2 w-100"
+											style="
+												background: #1870af;
+												border-radius: 5px;
+												margin-left: 0.05%;
+											"
+										>
+											<div class="col-2">
+												<p
+													style="
+														position: relative;
+														bottom: -0.4em;
+														color: white;
+													"
+												>
+													Día
+												</p>
+											</div>
+											<div class="col-4">
+												<p
+													style="
+														position: relative;
+														bottom: -0.4em;
+														color: white;
+													"
+												>
+													Nombre
+												</p>
+											</div>
+											<div class="col-2">
+												<p
+													style="
+														position: relative;
+														bottom: -0.4em;
+														color: white;
+													"
+												>
+													DNI
+												</p>
+											</div>
+											<div class="col-4">
+												<p
+													style="
+														position: relative;
+														bottom: -0.4em;
+														color: white;
+													"
+												>
+													Horario de ingreso (Aprox)
+												</p>
+											</div>
+										</div>
+										<div class="w-100 rowsBox">
+											<!-- ESTOS SON LOS ROWS QUE SE INYECTAN -->
+											<div
+												class="row w-100"
+												style="
+													margin-left: 0.05%;
+													border-bottom: 1px solid black;
+												"
+											>
+												<div class="col-2">
+													<p style="position: relative; bottom: -0.5em">
+														10/10/2023
+													</p>
+												</div>
+												<div class="col-4">
+													<p style="position: relative; bottom: -0.5em">
+														Francisco Bruno Moreno
+													</p>
+												</div>
+												<div class="col-2">
+													<p style="position: relative; bottom: -0.5em">
+														38668592
+													</p>
+												</div>
+												<div class="col-4">
+													<p style="position: relative; bottom: -0.5em">
+														20:30 Hs
+													</p>
+												</div>
+											</div>
+											<!-- ESTOS SON LOS ROWS QUE SE INYECTAN -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal Abrir Paquetes -->
+		<div
+			style="
+				background-color: rgba(0, 0, 0, 0.404);
+				width: 100vw;
+				height: 100vh;
+				position: fixed;
+				top: 0;
+				display: none;
+			"
+			id="modalPaquetes"
+		>
+			<div class="container modalCont">
+				<div class="row pb-5">
+					<div
+						class="col-12 mx-3"
+						style="position: relative; display: flex; align-items: center"
+					>
+						<img src="../images/Vector (14).png" class="img-fluid" />
+						<h1
+							class="font title mt-5 mx-2"
+							style="font-size: 1.4rem; position: relative; top: -0.9em"
+						>
+							Mi Paquetería
+						</h1>
+						<div style="position: absolute; right: 3em">
+							<i
+								class="fa-solid fa-xmark"
+								style="color: #496dab; font-size: 2.5rem; cursor: pointer"
+								onclick="closeModal('modalPaquetes')"
+							></i>
+						</div>
+					</div>
+					<div class="col-12 px-5">
+						<div class="modalBox">
+							<div class="row px-4 mt-4">
+								<div class="col-3">
+									<div>
+										<p style="font-weight: 600">Programar nueva visita</p>
+										<p class="mb-1">Mensajero</p>
+										<select name="" class="w-100 py-1" id=""></select>
+										<p class="mb-1 mt-3">Producto</p>
+										<input type="text" class="w-100 px-2 py-1" />
+										<p class="mb-1 mt-3">Palabra Clave</p>
+										<input type="text" class="w-100 px-2 py-1" />
+										<p class="mb-1 mt-3">Dia de arribo</p>
+										<input type="text" class="w-100 px-2 py-1" />
+										<p class="mb-1 mt-3">Horario de ingreso (Aprox)</p>
+										<input type="text" class="w-100 px-2 py-1" />
+										<div class="mt-5 pb-5">
+											<button class="btnRed py-1 px-5">
+												Registrar paquete
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-9">
+									<div class="mx-3">
+										<p style="font-weight: 600" class="mb-1">
+											Busqueda personalizada
+										</p>
+										<input type="text" class="w-50 px-2 py-1" />
+										<i
+											class="fa-solid fa-magnifying-glass"
+											style="position: relative; left: -2em"
+										></i>
+										<div
+											class="row mt-2 w-100"
+											style="
+												background: #1870af;
+												border-radius: 5px;
+												margin-left: 0.05%;
+											"
+										>
+											<div class="col-2">
+												<p
+													style="
+														position: relative;
+														bottom: -0.4em;
+														color: white;
+													"
+												>
+													Mensajero
+												</p>
+											</div>
+											<div class="col-3">
+												<p
+													style="
+														position: relative;
+														bottom: -0.4em;
+														color: white;
+													"
+												>
+													Producto
+												</p>
+											</div>
+											<div class="col-4">
+												<p
+													style="
+														position: relative;
+														bottom: -0.4em;
+														color: white;
+													"
+												>
+													Horario de llegada
+												</p>
+											</div>
+											<div class="col-3">
+												<p
+													style="
+														position: relative;
+														bottom: -0.4em;
+														color: white;
+													"
+												>
+													Estado
+												</p>
+											</div>
+										</div>
+										<div class="w-100 rowsBox">
+											<!-- ESTOS SON LOS ROWS QUE SE INYECTAN -->
+											<div
+												class="row w-100"
+												style="
+													margin-left: 0.05%;
+													border-bottom: 1px solid black;
+												"
+											>
+												<div class="col-2">
+													<p style="position: relative; bottom: -0.5em">
+														Pedidos Ya
+													</p>
+												</div>
+												<div class="col-3">
+													<p style="position: relative; bottom: -0.5em">
+														Monitor
+													</p>
+												</div>
+												<div class="col-4">
+													<p style="position: relative; bottom: -0.5em">
+														20:30 Hs
+													</p>
+												</div>
+												<div class="col-3">
+													<p style="position: relative; bottom: -0.5em">
+														En camino
+													</p>
+												</div>
+											</div>
+											<!-- ESTOS SON LOS ROWS QUE SE INYECTAN -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+			integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+		<script src="../global.js"></script>
+		<script
+			src="https://kit.fontawesome.com/5af3a8c52c.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

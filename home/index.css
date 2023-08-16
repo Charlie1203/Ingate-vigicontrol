@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
+/* Bold */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&display=swap");
+/* Oswald */
+
+body {
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.font {
+	font-family: "Fira Sans", sans-serif;
+}
+
+.title {
+	color: #1870af;
+	font-weight: 700;
+}
+
+.backBlue {
+	border-radius: 5px;
+	background-color: #1870af;
+	background-image: linear-gradient(90deg, #539ab6 0%, #41a0c5 100%);
+}
+
+.backBlue img {
+	width: 3.8em;
+}
+
+.miniTitle {
+	border-bottom: 1px solid black;
+}
+
+.btnRed {
+	background: #ed2025;
+	border: none;
+	color: white;
+	border-radius: 5px;
+}
+
+/* MODAL */
+
+body.modal-open {
+	overflow: hidden;
+	height: 100%;
+}
+
+.modalCont {
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	min-width: 20em;
+	font-family: "Fira Sans";
+	height: 85vh;
+	overflow-y: auto;
+}
+
+.modalCont img {
+	width: 3em;
+}
+
+.modalCont::-webkit-scrollbar {
+	display: none; /* hide scrollbar in Webkit browsers */
+}
+
+.modalBox {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.modalBox select {
+	border-radius: 3px;
+}
+
+.modalBox input {
+	border-radius: 3px;
+}
+
+.rowsBox {
+	height: 20em;
+	border: 1px solid black;
+	border-radius: 5px;
+}
